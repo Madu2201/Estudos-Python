@@ -1,1 +1,0 @@
-print("Olá, este é um teste simples em Python!")

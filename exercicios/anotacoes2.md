@@ -8,7 +8,6 @@
 - **Módulo (`%`)**: Retorna o resto da divisão.
 - **Exponenciação (`**`)**: Eleva à potência.
 
----
 
 ## Ordem de Precedência
 
@@ -20,7 +19,6 @@ A ordem de execução dos operadores segue:
 
 Use parênteses para garantir o resultado desejado.
 
----
 
 ## Formatação de Números
 
@@ -32,7 +30,7 @@ Use parênteses para garantir o resultado desejado.
 - **Separador de milhar:**  
   Use `_` para facilitar leitura de números grandes, ex: `1_000_000`.
 
----
+
 
 ## Conversão de Tipos Numéricos
 
@@ -40,7 +38,7 @@ Use parênteses para garantir o resultado desejado.
 - Para decimal: `float(valor)`
 - Para texto: `str(valor)`
 
----
+
 
 ## Dicas Gerais
 

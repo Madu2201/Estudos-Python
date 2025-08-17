@@ -3,7 +3,8 @@
 # 3° Construa uma mensagem : Enviamos um link de confirmação para o e-mail j***@gmail.com
 
 '''
-Só usar o input() para pegar o nome do usuário, o input() já converte o valor para string
+Só usar o input() para pegar o nome do usuário, o input() já converte o valor para string, então 
+converter sempre que for utilizar com números.
 Não precisa usar o print() para exibir o valor do input, pois o input já exibe o valor digitado
 '''
 # Solicita o nome e o e-mail do usuário
@@ -46,12 +47,14 @@ print(f"O servidor do e-mail é: {servidor}")
 # Função para mascarar o e-mail
 def mascara_email(email):
     if "@" in email:
-        usuario, dominio = email.split("@")
-        if len(usuario) > 3:
+        usuario, dominio = email.split("@") # Divide o e-mail em usuário e domínio
+        if len(usuario) > 3: # Se o usuário tiver mais de 3 caracteres
+            # Mascarar os caracteres do usuário, mantendo os 3 primeiros
             usuario_mascara = usuario[:3] + "***"
-        else:
+        else: # Se o usuário tiver 3 ou menos caracteres
+            # Manter o usuário completo, mas mascarar os últimos 3 caracteres
             usuario_mascara = usuario + "***"
-        return f"{usuario_mascara}@{dominio}"
+        return f"{usuario_mascara}@{dominio}" # Retorna o e-mail mascarado
     else:
         return "E-mail inválido"
     

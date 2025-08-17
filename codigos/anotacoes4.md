@@ -21,7 +21,7 @@ print(sum(numeros, 10))  # Saída: 20
 
 ## 🔧 Outras funções úteis em Python
 
-### **Função e Descrição**
+### **Função  e  Descrição:**
 
 `len()`	        Retorna o número de itens em um objeto (como lista, string, etc.)
 

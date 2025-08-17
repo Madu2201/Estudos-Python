@@ -37,6 +37,22 @@ print(sum(numeros, 10))  # Saída: 20
 `filter()`	    Filtra itens de um iterável com base em uma função que retorna True
 
 
+## 🧰 Operações Comuns em Listas
+
+### **Operação	Descrição	Exemplo**
+
+´in´	                    Verifica se um item está na lista       `"iphone" in produtos → True`
+´append()´	                Adiciona item ao final da lista	        `produtos.append("macbook")`
+´insert(indice, valor)´	    Insere item em posição específica	    `produtos.insert(1, "celular")`
+´remove(valor)´         	Remove item pelo valor	                `produtos.remove("macbook")`
+´pop(indice)´	            Remove item pelo índice	                `precos.pop(-1)`
+´count(valor)´	            Conta quantas vezes o item aparece	    `produtos.count("airpod") → 1`
+´sort()´	                Ordena lista em ordem crescente	        `precos.sort()`
+´reverse()´	                Inverte a ordem da lista	            `precos.reverse()`
+´lista[indice] = valor´	    Altera o valor de um item da lista	    `precos[0] = 4500`
+´lista[indice] *= número´	Aplica operação mát sobre item da lista	`precos[0] *= 1.1`
+
+
 ## Dicas Extras
 
 - `iterável`:  qualquer objeto que possa ser percorrido (como uma lista de números).

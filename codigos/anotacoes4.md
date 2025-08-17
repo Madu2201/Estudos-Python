@@ -1,6 +1,6 @@
 # 📘 Funções em Python:
 
-## 🧮 Função `sum()`
+### 🧮 Função `sum()`
 
 A função `sum()` é usada para somar todos os elementos de um iterável (como listas, tuplas ou conjuntos).
 

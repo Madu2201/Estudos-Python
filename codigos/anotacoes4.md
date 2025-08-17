@@ -8,9 +8,6 @@ A função `sum()` é usada para somar todos os elementos de um iterável (como 
 ```python
 sum(iterável, início)
 
-- `iterável`:  qualquer objeto que possa ser percorrido (como uma lista de números).
-- `início (opcional)`: valor inicial da soma. Se fornecido, será adicionado ao total.
-
 - Exemplo¹
 numeros = [1, 2, 3, 4]
 print(sum(numeros))  # Saída: 10
@@ -21,7 +18,7 @@ print(sum(numeros, 10))  # Saída: 20
 
 ## 🔧 Outras funções úteis em Python
 
-### **Função  e  Descrição:**
+### **Função e Descrição:**
 
 `len()`	        Retorna o número de itens em um objeto (como lista, string, etc.)
 
@@ -38,3 +35,10 @@ print(sum(numeros, 10))  # Saída: 20
 `map()`	        Aplica uma função a cada item de um iterável
 
 `filter()`	    Filtra itens de um iterável com base em uma função que retorna True
+
+
+## Dicas Extras
+
+- `iterável`:  qualquer objeto que possa ser percorrido (como uma lista de números).
+- `início (opcional)`: valor inicial da soma. Se fornecido, será adicionado ao total.
+

@@ -1,10 +1,10 @@
 # 📘 Funções em Python:
 
-### 🧮 Função `sum()`
+## 🧮 Função `sum()`
 
 A função `sum()` é usada para somar todos os elementos de um iterável (como listas, tuplas ou conjuntos).
 
-#### 📌 Sintaxe:
+### 📌 Sintaxe:
 ```python
 sum(iterável, início)
 
@@ -19,9 +19,9 @@ print(sum(numeros))  # Saída: 10
 print(sum(numeros, 10))  # Saída: 20
 ```
 
-### 🔧 Outras funções úteis em Python
+## 🔧 Outras funções úteis em Python
 
-**Função e Descrição**
+### **Função e Descrição**
 
 `len()`	        Retorna o número de itens em um objeto (como lista, string, etc.)
 

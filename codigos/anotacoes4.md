@@ -12,7 +12,8 @@ sum(iterável, início)
 - `início (opcional)`: valor inicial da soma. Se fornecido, será adicionado ao total.
 
 - Exemplo¹:
-```numeros = [1, 2, 3, 4]
+```
+numeros = [1, 2, 3, 4]
 print(sum(numeros))  # Saída: 10
 
 # Soma com valor inicial

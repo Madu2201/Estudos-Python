@@ -9,26 +9,32 @@ Adaptar a formatação numérica padrão do Python (estilo americano) para o for
 
 ---
 
-## 🔄 Etapas da Substituição
+## 🔄 Etapas da Substituição com `.replace()`
 
-1. **Troca da vírgula por um caractere temporário (`X`)**  
-   Isso evita conflitos ao substituir o ponto por vírgula posteriormente.
+O Python formata números com vírgula para milhar e ponto para decimal. Para transformar isso no padrão brasileiro, usamos uma sequência de substituições com `.replace()`:
 
-2. **Troca do ponto por vírgula**  
-   Altera o separador decimal para o padrão brasileiro.
+### 1. `replace(",", "X")`
+Substitui a vírgula (usada como separador de milhar) por um caractere temporário (`X`).  
+Isso evita que a vírgula seja confundida com o separador decimal na próxima etapa.
 
-3. **Troca do caractere temporário (`X`) por ponto**  
-   Restaura o separador de milhar no formato correto.
+**Exemplo intermediário:**  
+`R$ 100,300.00` → `R$ 100X300.00`
 
 ---
 
-## 📌 Exemplo de Transformação
+### 2. `replace(".", ",")`
+Substitui o ponto (usado como separador decimal) por vírgula, conforme o padrão brasileiro.
 
-Formato original (americano):  
-`R$ 100,300.00`
+**Exemplo intermediário:**  
+`R$ 100X300.00` → `R$ 100X300,00`
 
-Após as substituições:  
-`R$ 100.300,00`
+---
+
+### 3. `replace("X", ".")`
+Substitui o caractere temporário (`X`) por ponto, restaurando o separador de milhar no formato correto.
+
+**Resultado final:**  
+`R$ 100X300,00` → `R$ 100.300,00`
 
 ---
 

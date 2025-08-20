@@ -38,6 +38,7 @@ Comparar o desempenho de cada mês de 2023 com o mesmo mês de 2022, mostrando a
 ### 📌 Exemplo de saída:
 
 `Variação do jan:` 13.3% 
+
 `Variação do fev:` -3.2%
 
 ---
@@ -58,7 +59,9 @@ Simular o faturamento total de 2023 caso a empresa tivesse **pelo menos igualado
 ### 📌 Exemplo de saída:
 
 `Variação do fev:` -3.2% 
+
 `Variação do mai:` -1.8% 
+
 `Faturamento total simulado:` R$ 100.300,00
 
 ---

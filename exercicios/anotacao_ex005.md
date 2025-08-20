@@ -25,12 +25,8 @@ Comparar o desempenho de cada mês de 2023 com o mesmo mês de 2022, mostrando a
   - Recupera os valores de 2022 e 2023.
   - Calcula a variação percentual com a fórmula:
 
-    
 
-\[
-    \text{Variação} = \left( \frac{\text{vendas\_23}}{\text{vendas\_22}} - 1 \right) \times 100
-    \]
-
+` var_percentual = valor_23 / valor_22 - 1`
 
 
 - Exibe o resultado formatado como porcentagem com uma casa decimal.

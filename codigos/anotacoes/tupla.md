@@ -2,6 +2,8 @@
 
 Uma **tupla** é uma estrutura de dados em Python usada para armazenar múltiplos valores em uma única variável. Ela é **imutável**, ou seja, seus elementos não podem ser alterados depois de criada.
 
+[Ver código completo](/codigos/tuplas.py)
+
 ---
 
 ## 🔑 Características Principais

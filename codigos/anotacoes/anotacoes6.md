@@ -2,6 +2,9 @@
 
 Este documento explica dois conceitos fundamentais usados com frequência em Python: o parâmetro `sep` na função `print()` e o processo de **unpacking** de coleções.
 
+[Ver código completo](/codigos/tuplas.py)
+
+
 ---
 
 ## 🖨️ `sep` no `print()`

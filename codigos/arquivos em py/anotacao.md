@@ -38,6 +38,7 @@ with open("dados.txt", "r") as arquivo:
 | `"wb"` | Escrita em modo binário                  |
 
 
+---
 
 
 ## 📖 Lendo Arquivos
@@ -63,7 +64,7 @@ Lê uma linha por vez.
 linha = arquivo.readline()
 ```
 
-
+---
 
 ## 🧹 Tratando Linhas
 Ao ler arquivos, é comum limpar e separar os dados:
@@ -72,7 +73,7 @@ linha = linha.strip()           # Remove espaços e quebras de linha
 dados = linha.split(",")        # Separa por vírgula
 ```
 
-
+---
 
 ## 📝 Escrevendo em Arquivos
 Criar ou sobrescrever:
@@ -81,7 +82,7 @@ with open("saida.txt", "w") as arquivo:
     arquivo.write("Olá, mundo!\n")
 ```
 
-
+---
 
 ## Adicionar ao final:
 ```python
@@ -89,7 +90,7 @@ with open("saida.txt", "a") as arquivo:
     arquivo.write("Nova linha\n")
 ```
 
-
+---
 
 ## 📂 Caminhos de Arquivo
 
@@ -99,12 +100,10 @@ open("dados.txt", "r")
 ```
 
 
-
 ### Caminho absoluto:
 ```python
 open("C:/Users/usuario/Documents/dados.txt", "r")
 ```
-
 
 
 ### Compatibilidade entre sistemas:
@@ -114,7 +113,7 @@ caminho = os.path.join("pasta", "dados.txt")
 open(caminho, "r")
 ```
 
-
+---
 
 ## ✅ Boas Práticas
 **1° Use with open(...) para garantir fechamento automático.**

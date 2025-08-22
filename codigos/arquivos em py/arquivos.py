@@ -1,13 +1,48 @@
-""" # Abre um arquivo, o nome do arquivo esta curto pq ele esta no mesmo local se não seria ex: C://Users/....
-arquivo = open("vendas.txt", "r") # w = write, que é modo de escrita, quando vc quer descrever dentro do arquivo, já o r = read, é modo de leitura
+""" # ---------------------- MODO MANUAL ----------------------
+# Abre o arquivo 'vendas.txt' no modo de leitura ('r')
+# Nesse modo, é necessário lembrar de fechar o arquivo manualmente
+arquivo = open("vendas.txt", "r")  # 'w' = escrita, 'r' = leitura
 
-#Fazer oq quiser com o arquivo
+# Lê o conteúdo do arquivo
+# Aqui você pode fazer qualquer operação com o conteúdo
+conteudo = arquivo.read()
 
-arquivo.close() # Fechar arquivo """
+# Fecha o arquivo manualmente após o uso
+arquivo.close()
 
-# Com esse código ele automaticamente fecha o arquivo sem precisar lembrar do .close()
-with open ("vendas.txt", "r") as arquivo: 
-    #Fazer oq quiser com o arquivo
-    infos = arquivo.read() # Ler as informações do arquivo
+# Exibe o conteúdo lido
+print(conteudo) """
 
-print(infos) # Tanto faz se é dentro ou fora do withwwwwwwwwwwww
+
+# ---------------------- MODO AUTOMÁTICO COM 'with' ----------------------
+# Abre o arquivo usando o caminho absoluto, no modo de leitura
+# O bloco 'with' garante que o arquivo será fechado automaticamente ao final
+with open("c:/Users/dudac/OneDrive/Área de Trabalho/Madu/Programação/Visual Studio Code/Estudos-Python/codigos/arquivos em py/vendas.txt", "r") as arquivo:
+    # Lê todas as linhas do arquivo e retorna uma lista
+    # Cada item da lista é uma linha do arquivo, como: "Andre, 300\n"
+    infos = arquivo.readlines() # A variável infos é uma lista de strings
+
+# Inicializa a variável que vai acumular o total de vendas
+vendas_tot = 0
+
+# Percorre cada linha da lista 'infos'
+for item in infos:
+    # Remove quebras de linha e espaços extras
+    item = item.replace("\n", "")
+    item = item.replace(" ", "")
+
+    # Separa os dados da linha usando vírgula como delimitador
+    resultado = item.split(",")  # Exemplo: ["Andre", "300"]
+
+    # Pega o segundo elemento (valor da venda)
+    valor = resultado[1]
+
+    # Converte o valor para float
+    valor = float(valor)
+
+    # Soma ao total de vendas
+    vendas_tot += valor
+
+# Exibe o total de vendas
+print(vendas_tot)
+

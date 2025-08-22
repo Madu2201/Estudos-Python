@@ -17,6 +17,7 @@ arquivo.close()
 
 **É necessário fechar o arquivo manualmente com close().**
 
+
 ### ✅ Modo automático com with
 ```python
 with open("dados.txt", "r") as arquivo:
@@ -37,7 +38,10 @@ with open("dados.txt", "r") as arquivo:
 | `"wb"` | Escrita em modo binário                  |
 
 
+
+
 ## 📖 Lendo Arquivos
+
 
 ### `.read()`
 Lê todo o conteúdo como uma única string.
@@ -45,17 +49,20 @@ Lê todo o conteúdo como uma única string.
 texto = arquivo.read()
 ```
 
+
 ### `.readlines()`
 Retorna uma lista onde cada item é uma linha do arquivo.
 ```python
 linhas = arquivo.readlines()
 ```
 
+
 ### `.readline()`
 Lê uma linha por vez.
 ```python
 linha = arquivo.readline()
 ```
+
 
 
 ## 🧹 Tratando Linhas
@@ -66,6 +73,7 @@ dados = linha.split(",")        # Separa por vírgula
 ```
 
 
+
 ## 📝 Escrevendo em Arquivos
 Criar ou sobrescrever:
 ```python
@@ -74,11 +82,13 @@ with open("saida.txt", "w") as arquivo:
 ```
 
 
+
 ## Adicionar ao final:
 ```python
 with open("saida.txt", "a") as arquivo:
     arquivo.write("Nova linha\n")
 ```
+
 
 
 ## 📂 Caminhos de Arquivo
@@ -89,10 +99,12 @@ open("dados.txt", "r")
 ```
 
 
+
 ### Caminho absoluto:
 ```python
 open("C:/Users/usuario/Documents/dados.txt", "r")
 ```
+
 
 
 ### Compatibilidade entre sistemas:
@@ -101,6 +113,7 @@ import os
 caminho = os.path.join("pasta", "dados.txt")
 open(caminho, "r")
 ```
+
 
 
 ## ✅ Boas Práticas

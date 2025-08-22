@@ -27,3 +27,23 @@ print(tabela)
 # [[1, 2, 3], 
 #  [4, 5, 6], 
 #  [7, 8, 9]]
+
+""" # Define a lista A com três elementos
+A = [2, 3, 4]
+
+# Define a lista B com três elementos
+B = [7, -3, 2]
+
+# Cria uma lista vazia para armazenar os resultados da soma
+C = []
+
+# Percorre os índices de 0 a 2
+for indice in range(3):
+    # Soma os elementos correspondentes de A e B e adiciona à lista 'c'
+    C.append(A[indice] + B[indice])
+
+# Exibe a lista resultante
+print(C)
+
+# Saída esperada: [9, 0, 6] """
+

@@ -13,14 +13,14 @@ Python oferece duas formas principais de abrir arquivos:
 arquivo = open("dados.txt", "r")
 conteudo = arquivo.read()
 arquivo.close()
-
-É necessário fechar o arquivo manualmente com close().
 ```
+
+**É necessário fechar o arquivo manualmente com close().**
 
 ### Modo automático com with
 ```python
 with open("dados.txt", "r") as arquivo:
     conteudo = arquivo.read()
-
-O with garante que o arquivo será fechado automaticamente ao final do bloco.
 ```
+
+**O with garante que o arquivo será fechado automaticamente ao final do bloco.**

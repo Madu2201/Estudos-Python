@@ -126,6 +126,28 @@ open(caminho, "r")
 
 **4° Trate exceções com try/except para evitar falhas inesperadas.**
 
+---
 
+## 🧠 Extras
+
+### ✅ Verificar existência de um arquivo
+```python
+import os
+
+if os.path.exists("dados.txt"):
+    print("Arquivo encontrado!")
+else:
+    print("Arquivo não existe.")
+```
+
+
+### ✅ Criar arquivo se não existir
+```python
+import os
+
+if not os.path.exists("dados.txt"):
+    with open("dados.txt", "w") as f:
+        f.write("Arquivo criado automaticamente.\n")
+```
 
 

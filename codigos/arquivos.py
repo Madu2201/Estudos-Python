@@ -1,0 +1,1 @@
+arquivo = open("vendas.txt") # Abre um arquivo

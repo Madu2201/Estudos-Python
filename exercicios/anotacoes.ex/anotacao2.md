@@ -2,6 +2,8 @@
 
 Este documento explica como funciona o cálculo de bônus para vendedores com base em suas vendas semanais.
 
+[Ver código completo](/exercicios/ex006.py)
+
 ---
 
 ## 📊 Estrutura dos Dados

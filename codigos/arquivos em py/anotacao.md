@@ -26,6 +26,8 @@ with open("dados.txt", "r") as arquivo:
 
 **O with garante que o arquivo será fechado automaticamente ao final do bloco.**
 
+---
+
 ## ✍️ Modos de Abertura de Arquivos em Python
 
 | Modo | Descrição                                 |

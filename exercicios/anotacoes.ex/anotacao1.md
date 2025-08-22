@@ -2,6 +2,8 @@
 
 Este documento detalha o funcionamento de um código Python que analisa e simula o desempenho de vendas mensais de uma empresa nos anos de 2022 e 2023.
 
+[Ver código completo](exercicios/anotacao1.md)
+
 ---
 
 ## 🗂️ Estrutura dos Dados

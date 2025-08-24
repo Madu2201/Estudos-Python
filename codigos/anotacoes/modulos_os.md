@@ -20,6 +20,13 @@ os.listdir("caminho/da/pasta")
 ```
 *Retorna uma lista com os nomes de arquivos e subpastas.*
 
+```python
+arquivos = os.listdir("meus_dados")
+print(arquivos)
+```
+
+*Retorna uma lista com os nomes de arquivos e subpastas dentro de meus_dados.*
+
 ---
 
 ## 📂 Criar pastas
@@ -29,6 +36,11 @@ os.mkdir("nova_pasta")               # Cria uma pasta
 os.makedirs("pasta/subpasta")        # Cria estrutura de pastas
 ```
 
+```python
+os.mkdir("relatorios")  # Cria uma pasta chamada 'relatorios'
+os.makedirs("relatorios/2025/agosto")  # Cria estrutura de subpastas
+```
+
 ---
 
 ## 🗑️ Remover pastas
@@ -36,6 +48,11 @@ os.makedirs("pasta/subpasta")        # Cria estrutura de pastas
 ```python
 os.rmdir("pasta")                   # Remove pasta vazia
 os.removedirs("pasta/subpasta")     # Remove estrutura de pastas vazias
+```
+
+```python
+os.rmdir("relatorios")  # Remove a pasta se estiver vazia
+os.removedirs("relatorios/2025/agosto")  # Remove todas as pastas se estiverem vazias
 ```
 
 ---
@@ -48,6 +65,12 @@ os.rename("origem.txt", "destino.txt")
 
 *Move ou renomeia um arquivo ou pasta.*
 
+```python
+os.rename("dados.txt", "arquivos/dados_renomeado.txt")
+```
+
+*Move o arquivo dados.txt para a pasta arquivos com um novo nome.*
+
 ---
 
 ## ❌ Remover arquivos
@@ -55,6 +78,12 @@ os.rename("origem.txt", "destino.txt")
 ```python
 os.remove("arquivo.txt")
 ```
+
+```python
+os.remove("arquivos/dados_renomeado.txt")
+```
+
+*Apaga o arquivo especificado.*
 
 ---
 
@@ -68,6 +97,12 @@ os.getcwd()
 
 *Retorna o caminho do diretório atual.*
 
+```python
+print(os.getcwd())
+```
+
+*Mostra o caminho da pasta onde o script está sendo executado.*
+
 ---
 
 ## 🚶‍♀️ Mudar de diretório
@@ -75,6 +110,8 @@ os.getcwd()
 ```python
 os.chdir("novo_diretorio")
 ```
+
+*Muda o diretório de trabalho para a pasta*
 
 ---
 
@@ -85,6 +122,13 @@ os.path.join("pasta", "arquivo.txt")
 ```
 
 *Evita erros com separadores de caminho (/ ou \).*
+
+```python
+caminho = os.path.join("relatorios", "agosto", "dados.txt")
+print(caminho)
+```
+
+*Cria um caminho seguro, independente do sistema operacional.*
 
 ---
 
@@ -105,6 +149,20 @@ os.path.isfile("arquivo.txt")
 os.path.isdir("pasta")
 ```
 
+```python
+if os.path.exists("relatorios/agosto"):
+    print("Pasta encontrada!")
+```
+
+*Verifica se um caminho existe*
+
+```python
+print(os.path.isfile("dados.txt"))  # True se for arquivo
+print(os.path.isdir("relatorios"))  # True se for pasta
+```
+
+*Verificar se é arquivo ou pasta*
+
 ---
 
 ## 🌍 Variáveis de Ambiente
@@ -116,6 +174,13 @@ os.environ["USER"]
 os.getenv("PATH")
 ```
 
+```python
+usuario = os.environ.get("USERNAME")
+print(f"Usuário atual: {usuario}")
+```
+
+*Acessa variáveis*
+
 ---
 
 ## 🖥️ Informações do Sistema
@@ -124,12 +189,22 @@ os.getenv("PATH")
 os.name        # Retorna 'posix' (Linux/macOS) ou 'nt' (Windows)
 ```
 
+```python
+print(os.name)  # 'nt' para Windows, 'posix' para Linux/macOS
+```
+
 ---
 
 ## ⚙️ Executar comandos do sistema
 
 ```python
 os.system("echo Olá, mundo!")
+```
+
+*Executa um comando no terminal.*
+
+```python
+os.system("echo Olá, Maria!")
 ```
 
 *Executa um comando no terminal.*

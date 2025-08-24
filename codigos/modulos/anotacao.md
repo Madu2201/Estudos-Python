@@ -42,7 +42,7 @@ for nome in lista_arquivos:
 if nome.endswith(".txt"):
 ```
 
-**Verifica se o item atual é um arquivo .txt.**
+**Verifica se o nome termina com ".txt", ou seja, se é um arquivo de texto.**
 
 **Garante que o código só vai tentar mover arquivos de texto, ignorando pastas ou outros tipos de arquivos.**
 

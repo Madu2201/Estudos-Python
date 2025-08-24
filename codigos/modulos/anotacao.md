@@ -1,6 +1,6 @@
 # 📦 Explicação do Código Python — Organização de Arquivos .txt
 
-[Ver código completo](/modulos/automacao.py)
+[Ver código completo](automacao.py)
 
 ```python
 import os  # Importa a biblioteca que interage com o sistema operacional

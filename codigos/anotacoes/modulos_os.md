@@ -34,7 +34,7 @@ os.makedirs("pasta/subpasta")        # Cria estrutura de pastas
 ## 🗑️ Remover pastas
 
 ```python
-os.rmdir("pasta")                    # Remove pasta vazia
+os.rmdir("pasta")                   # Remove pasta vazia
 os.removedirs("pasta/subpasta")     # Remove estrutura de pastas vazias
 ```
 

@@ -4,11 +4,12 @@
 
 ```python
 import os  # Importa a biblioteca que interage com o sistema operacional
-O módulo os permite que o Python acesse funcionalidades do sistema operacional, como manipular arquivos, pastas e caminhos.
 ```
 
-```
-python
+**O módulo os permite que o Python acesse funcionalidades do sistema operacional, como manipular arquivos, pastas e caminhos.**
+
+
+```python
 lista_arquivos = os.listdir("codigos/arquivos")
 Cria uma lista com todos os nomes de arquivos e pastas dentro do diretório codigos/arquivos.
 ```

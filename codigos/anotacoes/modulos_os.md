@@ -20,6 +20,8 @@ os.listdir("caminho/da/pasta")
 ```
 *Retorna uma lista com os nomes de arquivos e subpastas.*
 
+### EXEMPLO
+
 ```python
 arquivos = os.listdir("meus_dados")
 print(arquivos)
@@ -36,6 +38,8 @@ os.mkdir("nova_pasta")               # Cria uma pasta
 os.makedirs("pasta/subpasta")        # Cria estrutura de pastas
 ```
 
+### EXEMPLO
+
 ```python
 os.mkdir("relatorios")  # Cria uma pasta chamada 'relatorios'
 os.makedirs("relatorios/2025/agosto")  # Cria estrutura de subpastas
@@ -49,6 +53,8 @@ os.makedirs("relatorios/2025/agosto")  # Cria estrutura de subpastas
 os.rmdir("pasta")                   # Remove pasta vazia
 os.removedirs("pasta/subpasta")     # Remove estrutura de pastas vazias
 ```
+
+### EXEMPLO
 
 ```python
 os.rmdir("relatorios")  # Remove a pasta se estiver vazia
@@ -65,6 +71,8 @@ os.rename("origem.txt", "destino.txt")
 
 *Move ou renomeia um arquivo ou pasta.*
 
+### EXEMPLO
+
 ```python
 os.rename("dados.txt", "arquivos/dados_renomeado.txt")
 ```
@@ -78,6 +86,8 @@ os.rename("dados.txt", "arquivos/dados_renomeado.txt")
 ```python
 os.remove("arquivo.txt")
 ```
+
+### EXEMPLO
 
 ```python
 os.remove("arquivos/dados_renomeado.txt")
@@ -96,6 +106,8 @@ os.getcwd()
 ```
 
 *Retorna o caminho do diretório atual.*
+
+### EXEMPLO
 
 ```python
 print(os.getcwd())
@@ -123,6 +135,8 @@ os.path.join("pasta", "arquivo.txt")
 
 *Evita erros com separadores de caminho (/ ou \).*
 
+### EXEMPLO
+
 ```python
 caminho = os.path.join("relatorios", "agosto", "dados.txt")
 print(caminho)
@@ -149,12 +163,16 @@ os.path.isfile("arquivo.txt")
 os.path.isdir("pasta")
 ```
 
+### EXEMPLO¹
+
 ```python
 if os.path.exists("relatorios/agosto"):
     print("Pasta encontrada!")
 ```
 
 *Verifica se um caminho existe*
+
+### EXEMPLO²
 
 ```python
 print(os.path.isfile("dados.txt"))  # True se for arquivo
@@ -174,6 +192,8 @@ os.environ["USER"]
 os.getenv("PATH")
 ```
 
+### EXEMPLO
+
 ```python
 usuario = os.environ.get("USERNAME")
 print(f"Usuário atual: {usuario}")
@@ -189,6 +209,8 @@ print(f"Usuário atual: {usuario}")
 os.name        # Retorna 'posix' (Linux/macOS) ou 'nt' (Windows)
 ```
 
+### EXEMPLO
+
 ```python
 print(os.name)  # 'nt' para Windows, 'posix' para Linux/macOS
 ```
@@ -202,6 +224,8 @@ os.system("echo Olá, mundo!")
 ```
 
 *Executa um comando no terminal.*
+
+### EXEMPLO
 
 ```python
 os.system("echo Olá, Maria!")

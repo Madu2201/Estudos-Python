@@ -13,24 +13,27 @@ import os  # Importa a biblioteca que interage com o sistema operacional
 
 ```python
 lista_arquivos = os.listdir("codigos/arquivos")
-Cria uma lista com todos os nomes de arquivos e pastas dentro do diretório codigos/arquivos.
 ```
+
+**Cria uma lista com todos os nomes de arquivos e pastas dentro do diretório codigos/arquivos.**
 
 **Retorna uma lista como: ['arquivo22.txt', 'arquivo23.txt', '22', '23'].**
 
 
 ```python
 for nome in lista_arquivos:
-Inicia um laço que percorre cada item da lista lista_arquivos.
 ```
+
+**Inicia um laço que percorre cada item da lista lista_arquivos.**
 
 **A variável nome representa o nome de cada arquivo ou pasta encontrado.**
 
 
 ```python
 if nome.endswith(".txt"):
-Verifica se o item atual é um arquivo .txt.
 ```
+
+**Verifica se o item atual é um arquivo .txt.**
 
 **Garante que o código só vai tentar mover arquivos de texto, ignorando pastas ou outros tipos de arquivos.**
 

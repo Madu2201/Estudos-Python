@@ -2,6 +2,8 @@
 
 [Ver código completo](automacao.py)
 
+---
+
 ```python
 import os  # Importa a biblioteca que interage com o sistema operacional
 ```

@@ -79,7 +79,7 @@ class Usuario:
 
 *brincar_com_animais(): chama o método interagir() de cada animal.*
 
---------
+---
 
 ## 🧪 Simulação Interativa
 

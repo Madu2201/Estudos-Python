@@ -2,6 +2,8 @@
 
 O módulo os permite que o Python interaja com o sistema operacional. Com ele, é possível manipular arquivos, pastas, caminhos, variáveis de ambiente e até executar comandos no terminal.
 
+[Ver código completo](/codigos/modulos/bibliotecas.py)
+
 ---
 
 ## 🔹 Importação

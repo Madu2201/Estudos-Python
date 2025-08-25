@@ -10,7 +10,7 @@ def ler_dois_numeros():
             num_02 = int(input('Digite o segundo número: '))
             return num_01, num_02
         except ValueError:
-            print('❌ Entrada inválida! Digite apenas números inteiros.')
+            print('Entrada inválida! Digite apenas números inteiros.')
 
 # Função para ler um único número inteiro com validação
 def ler_um_numero():
@@ -19,38 +19,38 @@ def ler_um_numero():
             num = int(input('Digite um número: '))
             return num
         except ValueError:
-            print('❌ Entrada inválida! Digite apenas números inteiros.')
+            print('Entrada inválida! Digite apenas números inteiros.')
 
 # Funções para cada operação
 def soma():
     num_01, num_02 = ler_dois_numeros()
-    print('🧮 A soma é:', num_01 + num_02)
+    print('A soma é:', num_01 + num_02)
 
 def subtracao():
     num_01, num_02 = ler_dois_numeros()
-    print('🧮 A subtração é:', num_01 - num_02)
+    print('A subtração é:', num_01 - num_02)
 
 def multiplicacao():
     num_01, num_02 = ler_dois_numeros()
-    print('🧮 A multiplicação é:', num_01 * num_02)
+    print('A multiplicação é:', num_01 * num_02)
 
 def divisao():
     num_01, num_02 = ler_dois_numeros()
     if num_02 != 0:
-        print('🧮 A divisão é:', num_01 / num_02)
+        print('A divisão é:', num_01 / num_02)
     else:
         print('⚠ Não é possível dividir por zero!')
 
 def exponenciacao():
     num_01, num_02 = ler_dois_numeros()
-    print('🧮 A exponenciação é:', num_01 ** num_02)
+    print('A exponenciação é:', num_01 ** num_02)
 
 def fatorial():
     num = ler_um_numero()
     if num < 0:
         print('⚠ Fatorial não definido para números negativos!')
     else:
-        print('🧮 O fatorial é:', math.factorial(num))
+        print('O fatorial é:', math.factorial(num))
 
 # Loop principal do menu
 while True:
@@ -69,7 +69,7 @@ while True:
     try:
         opcao = int(input('Escolha uma opção: '))
     except ValueError:
-        print('❌ Entrada inválida! Digite um número de 1 a 7.')
+        print('Entrada inválida! Digite um número de 1 a 7.')
         continue
 
     if opcao == 1:
@@ -85,7 +85,7 @@ while True:
     elif opcao == 6:
         fatorial()
     elif opcao == 7:
-        print('👋 Saindo do programa...')
+        print('Saindo do programa...')
         break
     else:
-        print('❌ Opção inválida! Tente novamente.')
+        print('Opção inválida! Tente novamente.')

@@ -20,6 +20,7 @@ pip install requests
 ### 📚 Principais Funcionalidades
 
 **1. requests.get(url)**
+
 *Faz uma requisição HTTP do tipo GET para obter dados de uma URL.*
 
 ```python
@@ -30,6 +31,7 @@ print(resposta.text)  # Conteúdo bruto da resposta
 
 
 **2. requests.post(url, data=...)**
+
 *Envia dados para uma URL usando o método POST.*
 
 ```python
@@ -39,15 +41,18 @@ resposta = requests.post("https://api.exemplo.com/usuarios", data=dados)
 
 
 **3. requests.put(url, data=...)**
+
 *Atualiza dados existentes com o método PUT.*
 
 
 **4. requests.delete(url)**
+
 *Remove dados de um recurso com o método DELETE.*
 
 ---
 
 ### 🔍 Atributos Importantes da Resposta
+
 **Depois de fazer uma requisição, você pode acessar várias informações:**
 
 | 🧩 Atributo           | 📘 Descrição                                                 |
@@ -61,6 +66,7 @@ resposta = requests.post("https://api.exemplo.com/usuarios", data=dados)
 ---
 
 ## 🛠️ Exemplos Práticos
+
 **✅ Verificar se a requisição foi bem-sucedida**
 
 ```python
@@ -83,7 +89,9 @@ print("Cotação do dólar:", dados["USDBRL"]["bid"])
 
 ---
 
+
 ### 🔒 Autenticação
+
 **Você pode enviar credenciais com auth:**
 
 ```python
@@ -117,4 +125,5 @@ requests.get("https://api.exemplo.com", timeout=5)
 ---
 
 ## 📎 Documentação Oficial
+
 Para mais detalhes, consulte: https://docs.python-requests.org

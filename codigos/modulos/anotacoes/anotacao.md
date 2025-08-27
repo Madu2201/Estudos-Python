@@ -1,6 +1,6 @@
 # 📦 Explicação do Código Python — Organização de Arquivos .txt
 
-[Ver código completo](/automacao.py)
+[Ver código completo](../automacao.py)
 
 ---
 

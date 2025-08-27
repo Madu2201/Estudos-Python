@@ -17,10 +17,6 @@ print(2 in lista1)  # True, verifica se 2 está em lista1
 # Operador 'not in' (verificação de ausência)
 print(10 not in lista2)  # True, verifica se 10 não está em lista2
 
-# Operador 'len' (tamanho da lista)
-print("Tamanho da lista1:", len(lista1))  # 3, lista1 tem 3 elementos
-print("Tamanho da lista2:", len(lista2))  # 2, lista2 tem 2 elementos
-
 # Operador de fatiamento (slicing)
 lista6 = lista3[1:4]  # Obtém uma fatia da lista3 do índice 1 ao 3
 print("Fatiamento (slicing):", lista6)  # [2, 3, 4]

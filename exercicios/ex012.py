@@ -70,7 +70,7 @@ while True:
         opcao = int(input('Escolha uma opção: '))
     except ValueError:
         print('Entrada inválida! Digite um número de 1 a 7.')
-        continue
+        continue # Volta para o início do loop
 
     if opcao == 1:
         soma()
